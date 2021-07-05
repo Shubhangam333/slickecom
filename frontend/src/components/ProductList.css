@@ -1,0 +1,24 @@
+.productList {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.productList__body {
+  display: flex !important;
+  flex-direction: row;
+  overflow-y: scroll !important;
+  flex-wrap: wrap !important;
+}
+.productList__products {
+  display: flex;
+}
+.productList__header {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  /* For mobile phones: */
+  .productList {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
