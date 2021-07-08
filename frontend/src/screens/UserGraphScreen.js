@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Pie, defaults } from "react-chartjs-2";
 import { useDispatch, useSelector } from "react-redux";
 import { listOrders } from "../actions/orderActions";
+import "../App.css";
 // import { useDispatch, useSelector } from "react-redux";
 // defaults.global.tooltips.enabled = false;
 defaults.global.legend.position = "bottom";
@@ -56,6 +57,7 @@ const UserGraphScreen = ({ history }) => {
 
   return (
     <>
+      <h1 className="graphh1">User Graph</h1>
       <Pie
         data={{
           labels: label.slice(0, 3),
@@ -92,7 +94,7 @@ const UserGraphScreen = ({ history }) => {
         height={300}
         width={600}
         options={{
-          maintainAspectRatio: true,
+          maintainAspectRatio: false,
           //   scales: {
           //     yAxes: [
           //       {

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Pie, defaults } from "react-chartjs-2";
 import { useDispatch, useSelector } from "react-redux";
 import { listOrders } from "../actions/orderActions";
+
 // import { useDispatch, useSelector } from "react-redux";
 // defaults.global.tooltips.enabled = false;
 defaults.global.legend.position = "bottom";
@@ -38,6 +39,7 @@ const PayMethGraphScreen = ({ history }) => {
 
   return (
     <>
+      <h1 className="graphh1">Payment Choice Graph </h1>
       <Pie
         data={{
           labels: ["COD", "PayPal"],
@@ -74,7 +76,7 @@ const PayMethGraphScreen = ({ history }) => {
         height={300}
         width={600}
         options={{
-          maintainAspectRatio: true,
+          maintainAspectRatio: false,
           //   scales: {
           //     yAxes: [
           //       {

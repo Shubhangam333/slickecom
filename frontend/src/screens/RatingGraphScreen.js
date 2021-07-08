@@ -46,7 +46,7 @@ const RatingGraphScreen = ({ history }) => {
   console.log(result);
   return (
     <>
-      <h1 className="graphh1">Rating Graph Screen</h1>
+      <h1 className="graphh1">Rating Graph</h1>
       <Pie
         data={{
           labels: ["above 0", "above 1", "above 2 ", "above 3", "above 4"],

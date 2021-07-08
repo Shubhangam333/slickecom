@@ -45,7 +45,7 @@ const ReviewGraphScreen = ({ history }) => {
   console.log(result);
   return (
     <>
-      <h1 className="graphh1">Review Graph Screen</h1>
+      <h1 className="graphh1">Review Graph</h1>
       <Pie
         data={{
           labels: ["less than 3", "above 3", "above 6 ", "above 9", "above 15"],

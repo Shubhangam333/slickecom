@@ -48,7 +48,7 @@ const PriceGraphScreen = ({ history }) => {
 
   return (
     <>
-      <h1 className="graphh1">Price Graph Screen</h1>
+      <h1 className="graphh1">Price Graph </h1>
       <Pie
         data={{
           labels: [

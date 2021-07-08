@@ -1,6 +1,6 @@
 import React from "react";
 import { Pie, defaults } from "react-chartjs-2";
-
+import "../App.css";
 // defaults.global.tooltips.enabled = false
 defaults.global.legend.position = "bottom";
 
@@ -49,65 +49,68 @@ const GraphScreen = ({ orders }) => {
   console.log(d);
 
   return (
-    <Pie
-      data={{
-        labels: label.slice(0, 9),
-        datasets: [
-          {
-            label: "# of votes",
-            data: d.slice(0, 9),
-            backgroundColor: [
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
-              "rgba(255, 159, 64, 0.2)",
-              "rgba(231, 121, 34, 0.3)",
-              "rgba(25, 92, 44, 0.4)",
-              "rgba(95, 89, 64, 0.3)",
-              "rgba(110, 79, 34, 0.5)",
-              "rgba(55, 39, 243, 0.3)",
-              "rgba(210, 89, 234, 0.5)",
-            ],
-            borderColor: [
-              "rgba(255, 99, 132, 1)",
-              "rgba(54, 162, 235, 1)",
-              "rgba(255, 206, 86, 1)",
-              "rgba(75, 192, 192, 1)",
-              "rgba(153, 102, 255, 1)",
-              "rgba(255, 159, 64, 1)",
-              "rgba(231, 121, 34, 1)",
-              "rgba(25, 92, 44, 1)",
-              "rgba(95, 89, 64, 1)",
-              "rgba(110, 79, 34, 1)",
-              "rgba(55, 39, 243, 1)",
-              "rgba(210, 89, 234, 1)",
-            ],
-            borderWidth: 1,
+    <>
+      <h1 className="graphh1">Product Graph Screen</h1>
+      <Pie
+        data={{
+          labels: label.slice(0, 9),
+          datasets: [
+            {
+              label: "# of votes",
+              data: d.slice(0, 9),
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.2)",
+                "rgba(54, 162, 235, 0.2)",
+                "rgba(255, 206, 86, 0.2)",
+                "rgba(75, 192, 192, 0.2)",
+                "rgba(153, 102, 255, 0.2)",
+                "rgba(255, 159, 64, 0.2)",
+                "rgba(231, 121, 34, 0.3)",
+                "rgba(25, 92, 44, 0.4)",
+                "rgba(95, 89, 64, 0.3)",
+                "rgba(110, 79, 34, 0.5)",
+                "rgba(55, 39, 243, 0.3)",
+                "rgba(210, 89, 234, 0.5)",
+              ],
+              borderColor: [
+                "rgba(255, 99, 132, 1)",
+                "rgba(54, 162, 235, 1)",
+                "rgba(255, 206, 86, 1)",
+                "rgba(75, 192, 192, 1)",
+                "rgba(153, 102, 255, 1)",
+                "rgba(255, 159, 64, 1)",
+                "rgba(231, 121, 34, 1)",
+                "rgba(25, 92, 44, 1)",
+                "rgba(95, 89, 64, 1)",
+                "rgba(110, 79, 34, 1)",
+                "rgba(55, 39, 243, 1)",
+                "rgba(210, 89, 234, 1)",
+              ],
+              borderWidth: 1,
+            },
+          ],
+        }}
+        height={300}
+        width={600}
+        options={{
+          maintainAspectRatio: true,
+          // scales: {
+          //   yAxes: [
+          //     {
+          //       ticks: {
+          //         beginAtZero: true,
+          //       },
+          //     },
+          //   ],
+          // },
+          legend: {
+            labels: {
+              fontSize: 25,
+            },
           },
-        ],
-      }}
-      height={300}
-      width={600}
-      options={{
-        maintainAspectRatio: true,
-        // scales: {
-        //   yAxes: [
-        //     {
-        //       ticks: {
-        //         beginAtZero: true,
-        //       },
-        //     },
-        //   ],
-        // },
-        legend: {
-          labels: {
-            fontSize: 25,
-          },
-        },
-      }}
-    />
+        }}
+      />
+    </>
   );
 };
 
