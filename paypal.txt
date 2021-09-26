@@ -1,0 +1,11 @@
+sb-nwj4n6423071@personal.example.com
+
+XTpiZ3@H
+
+MONGO_URI=mongodb+srv://project27:project27@cluster0.rnmak.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+NODE_ENV=development
+JWT_SECRET=acdefgh
+PAYPAL_CLIENT_ID=AWx-3-SfnVxrgFeK5OJrfQW-KS4XVedHk7PRxIcxVXyB2RvKqpYBKn58CD6QWAvtLIFzC6RmTvWfZzEK
+
+admin@example.com
+123456
